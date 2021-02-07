@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: new-nodejs
+  labels:
+    app: new-nodejs
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: new-nodejs
+  template:
+    metadata:
+      labels:
+        app: new-nodejs
+    spec:
+      containers:
+      - name: new-nodejs
+        image: teperwoman/new-nodejs-project:latest
+        ports:
+        - containerPort: 3000
