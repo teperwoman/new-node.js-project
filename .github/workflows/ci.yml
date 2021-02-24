@@ -77,6 +77,6 @@ jobs:
           manifests: |
               kubernetes/deployment.yaml
               kubernetes/service.yaml
-              kubeconfig/mongo.yaml
+              kubernetes/mongo.yaml
           images: 'tftest/new-nodejs-project:${{ github.sha }}'
           kubectl-version: 'latest'
