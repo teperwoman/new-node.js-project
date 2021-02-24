@@ -5,7 +5,7 @@ metadata:
   labels:
     app: new-nodejs
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: new-nodejs
@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: new-nodejs
-        image: teperwoman/new-nodejs-project:latest
+        image: tftest/new-nodejs-project:latest
         ports:
         - containerPort: 3000
