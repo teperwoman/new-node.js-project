@@ -73,7 +73,7 @@ jobs:
        #changer le nom de yaml et le nom de l'image
       - uses: Azure/k8s-deploy@v1.3
         with:
-          namespace: 'default'
+          namespace: 'new-nodejs-project'
           manifests: |
               kubernetes/deployment.yaml
               kubernetes/service.yaml
